@@ -1,5 +1,5 @@
 FROM ghcr.io/puppeteer/puppeteer:latest
-LABEL org.opencontainers.image.source https://github.com/ccjmne/puppeteer-html2pdf
+LABEL org.opencontainers.image.source https://github.com/famoser/puppeteer-html2pdf
 
 USER root
 

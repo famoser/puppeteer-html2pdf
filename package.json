@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ccjmne/puppeteer-html2pdf.git"
+    "url": "git+https://github.com/famoser/puppeteer-html2pdf.git"
   },
   "keywords": [
     "html",
@@ -20,12 +20,12 @@
     "puppeteer",
     "docker"
   ],
-  "author": "Eric NICOLAS <ccjmne@gmail.com> (ccjmne)",
+  "author": "Florian Moser <git@famoser.ch> (famoser)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ccjmne/puppeteer-html2pdf/issues"
+    "url": "https://github.com/famoser/puppeteer-html2pdf/issues"
   },
-  "homepage": "https://github.com/ccjmne/puppeteer-html2pdf#readme",
+  "homepage": "https://github.com/famoser/puppeteer-html2pdf#readme",
   "dependencies": {
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
