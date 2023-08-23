@@ -28,22 +28,15 @@ docker run --detach -p=<port>:3000 --shm-size 1G --sysctl net.ipv6.conf.all.disa
 
 ## Use it
 
-The webserver listens on the port (specified in the [Run it](#run-it) section) and exposes two endpoints:
+The webserver listens on the port (specified in the [Run it](#run-it) section) and exposes a single endpoint at `/`. With the header `Content-Type: text/html`, send a POST request with the payload consisting of the HTML of the header, the content and the footer. Like this:
 
-Single-page document, default settings (format: `A4`, orientation: `portrait`):
-
-|                        | Single-page document       |
-| ---------------------- |----------------------------|
-| Request Path           | `/`                        |
-| Request Method         | `POST`                     |
-| `Content-Type` header  | `text/html`                |
-| Request Body           | HTML content with dividers |
-
-The HTML content with dividers is of the following form:
 ```
+POST /
+Content-Type: text/html
+
 <h2>Header appearing on every page<h2>
 ----- HEADER BODY -----
-<p>Body, the actual content which flows over pages</p>
+<p>Content which flows over pages</p>
 ----- BODY FOOTER -----
 <h2>Footer appearing on every page<h2>
 ```
@@ -51,4 +44,4 @@ The HTML content with dividers is of the following form:
 Further, you can pass query parameters:
 
 - `filename` to set the name of the resulting PDF file
-- the options supported by [Puppeteer's PDFOptions](https://pptr.dev/api/puppeteer.pdfoptions). `path` is not supported. Pass `marginTop`, `marginLeft`, `marginRight`, `marginBottom` to set the `PDFMargin` object. 
+- all options supported by [Puppeteer's PDFOptions](https://pptr.dev/api/puppeteer.pdfoptions). `path` is not supported. Pass `marginTop`, `marginLeft`, `marginRight`, `marginBottom` to set the `PDFMargin` object. 
