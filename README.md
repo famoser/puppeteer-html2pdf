@@ -1,11 +1,10 @@
 # HTML to PDF conversion using puppeteer
 
+[![Docker Image CI](https://github.com/famoser/puppeteer-html2pdf/actions/workflows/publish-to-ghcr.yml/badge.svg)](https://github.com/ccjmne/puppeteer-html2pdf/actions/workflows/publish-to-ghcr.yml)
+
 Print your HTML to PDF via Puppeteer in a Docker container.
 
 Heavily inspired by https://github.com/ccjmne/puppeteer-html2pdf.
-
-[![Docker Image CI](https://github.com/famoser/puppeteer-html2pdf/actions/workflows/publish-to-ghcr.yml/badge.svg)](https://github.com/ccjmne/puppeteer-html2pdf/actions/workflows/publish-to-ghcr.yml)
-
 
 ## Run it
 
@@ -22,9 +21,9 @@ Production:
 docker run --detach -p=<port>:3000 --shm-size 1G --sysctl net.ipv6.conf.all.disable_ipv6=1 ghcr.io/famoser/puppeteer-html2pdf:<version>
 ```
 
-| Environment Variable | Description                                                                                                                                  |
-| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| BODY_LIMIT           | Maximum request body size. Passed on to [body-parser](https://github.com/expressjs/body-parser#limit) and `express.json`. Defaults to `5mb`. |
+| Environment | Description                                                                                                                                  |
+| ----------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| BODY_LIMIT  | Maximum request body size. Passed on to [body-parser](https://github.com/expressjs/body-parser#limit) and `express.json`. Defaults to `5mb`. |
 
 
 ## Use it
