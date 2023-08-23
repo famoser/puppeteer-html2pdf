@@ -1,6 +1,6 @@
 # HTML to PDF conversion using puppeteer
 
-[![Docker Image CI](https://github.com/famoser/puppeteer-html2pdf/actions/workflows/publish-to-ghcr.yml/badge.svg)](https://github.com/ccjmne/puppeteer-html2pdf/actions/workflows/publish-to-ghcr.yml)
+[![Docker Image CI](https://github.com/famoser/puppeteer-html2pdf/actions/workflows/publish-to-ghcr.yml/badge.svg)](https://github.com/famoser/puppeteer-html2pdf/actions/workflows/publish-to-ghcr.yml)
 
 Print your HTML to PDF via Puppeteer in a Docker container.
 
