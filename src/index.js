@@ -4,9 +4,6 @@ const booleanParser = require('express-query-boolean');
 const numberParser = require('express-query-int');
 const cors = require('cors');
 
-const pdf = require('pdfjs');
-const tmp = require('tmp');
-
 const app = express();
 const port = 3000;
 
