@@ -10,7 +10,7 @@ const tmp = require('tmp');
 const app = express();
 const port = 3000;
 
-const limit = process.env.BODY_LIMIT || '1mb';
+const limit = process.env.BODY_LIMIT || '5mb';
 
 app.use(express.json({limit}));
 app.use(bodyParser.text({type: 'text/html', limit}));

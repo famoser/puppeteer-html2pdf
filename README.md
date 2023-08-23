@@ -43,7 +43,7 @@ Stop with: `docker stop html2pdf`
 
 | Name       | Description                                                                                                               | Default Value |
 | ---------- | ------------------------------------------------------------------------------------------------------------------------- | ------------- |
-| BODY_LIMIT | Maximum request body size. Passed on to [body-parser](https://github.com/expressjs/body-parser#limit) and `express.json`. | `1mb`         |
+| BODY_LIMIT | Maximum request body size. Passed on to [body-parser](https://github.com/expressjs/body-parser#limit) and `express.json`. | `5mb`         |
 
 ## Use it
 
