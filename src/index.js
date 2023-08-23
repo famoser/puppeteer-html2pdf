@@ -17,12 +17,6 @@ app.use(bodyParser.text({type: 'text/html', limit}));
 app.use(booleanParser());
 app.use(numberParser());
 
-function delay(time) {
-  return new Promise(function (resolve) {
-    setTimeout(resolve, time);
-  });
-}
-
 async function print({browser, htmlContents, options}) {
   const page = await browser.newPage();
   page.on('console', message => console.log(`${message.type()} ${message.text()}`))
