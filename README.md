@@ -6,6 +6,7 @@ Heavily inspired by https://github.com/ccjmne/puppeteer-html2pdf.
 
 [![Docker Image CI](https://github.com/famoser/puppeteer-html2pdf/actions/workflows/publish-to-ghcr.yml/badge.svg)](https://github.com/ccjmne/puppeteer-html2pdf/actions/workflows/publish-to-ghcr.yml)
 
+
 ## Run it
 
 As a webserver, on the port of your choosing.
@@ -21,11 +22,10 @@ Production:
 docker run --detach -p=<port>:3000 --shm-size 1G --sysctl net.ipv6.conf.all.disable_ipv6=1 ghcr.io/famoser/puppeteer-html2pdf:<version>
 ```
 
-## Docker Environment Variables
+| Environment Variable | Description                                                                                                                                  |
+| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| BODY_LIMIT           | Maximum request body size. Passed on to [body-parser](https://github.com/expressjs/body-parser#limit) and `express.json`. Defaults to `5mb`. |
 
-| Name       | Description                                                                                                               | Default Value |
-| ---------- | ------------------------------------------------------------------------------------------------------------------------- | ------------- |
-| BODY_LIMIT | Maximum request body size. Passed on to [body-parser](https://github.com/expressjs/body-parser#limit) and `express.json`. | `5mb`         |
 
 ## Use it
 
